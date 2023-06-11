@@ -1,0 +1,26 @@
+
+POST http://localhost.mathworks.com:3000/api/components/new
+Content-Type: application/json
+
+{
+    "name" : "openssl",
+    "project_url" : "some new URL"
+}
+
+####
+GET http://localhost.mathworks.com:3000/api/components
+Content-Type: application/json
+
+####
+GET http://localhost.mathworks.com:3000/api/components/1
+Content-Type: application/json
+
+
+####
+PUT http://localhost.mathworks.com:3000/api/components/10
+Content-Type: application/json
+
+{
+    "name" : "openssl new",
+    "project_url" : "some new URL"
+}
